@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Bootstrap 5 CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+
+<style>
+  .bg-color {
+    background-color: #c1bdb7;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+
+  h2 {
+    color: #c1bdb7;
+    filter: invert(0.7);
+    font-size: 26px;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+
+  .text-gray {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+</style>
+
+<body>
+  <h2 class="text-center">Fading Images And Text</h2>
+  <section class="container-fluid pt-5">
+    <div class="container">
+      <div class="row bg-color">
+        
+        <div class="col-lg-6 py-3">
+          <img class= "rounded float-left" src="https://picsum.photos/400/500" alt="">
+        </div>
+        
+        <div class="col-lg-6 py-3">
+          <p class="font-super mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quidem itaque distinctio assumenda obcaecati maiores nulla iusto molestias, tempora quasi dolor provident tempore voluptas, perspiciatis odio! Inventore, rem! Debitis, nemo?</p>
+        </div>
+
+      </div>
+
+      
+      <div class="row my-3">
+        <div class="col-lg-6 py-3 bg-color" data-aos="fade-right">
+          <img class="rounded mx-auto d-block" src="https://picsum.photos/300/400" alt="">
+          <p class="text-dark mt-3" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quidem itaque distinctio assumenda obcaecati maiores nulla iusto molestias, tempora quasi dolor provident tempore voluptas, perspiciatis odio! Inventore, rem! Debitis, nemo?</p>
+        </div>
+        
+        <div class="col-lg-6 py-3 bg-color" data-aos="fade-left">
+          <img class="rounded mx-auto d-block" src="https://picsum.photos/300/400" alt="">
+          <p class="text-dark mt-3" data-aos="fade-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quidem itaque distinctio assumenda obcaecati maiores nulla iusto molestias, tempora quasi dolor provident tempore voluptas, perspiciatis odio! Inventore, rem! Debitis, nemo?</p>
+        </div>
+      </div>
+      
+
+      <div class="col-lg-12 py-3" data-aos="fade-right">
+        <img class="rounded mx-auto d-block" src="https://picsum.photos/400/400" alt="">
+      </div>
+
+      <div class="col-lg-12 py-3" data-aos="fade-left">
+        <p class="text-dark mt-3" data-aos="fade-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quidem itaque distinctio assumenda obcaecati maiores nulla iusto molestias, tempora quasi dolor provident tempore voluptas, perspiciatis odio! Inventore, rem! Debitis, nemo?</p>
+      </div>
+      
+    </div>
+
+    <hr class="mt-5">
+    <footer>
+      <p class="text-center text-gray">All Rights Reserved 2020 &copy Designed And Maintained By SHANKIRAN P M</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        duration: 1000
+      });
+    </script>
+  </section>
+</body>
+</html>
